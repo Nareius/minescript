@@ -1,0 +1,10 @@
+import minescript
+
+with minescript.EventQueue() as events:
+    events.register_chat_listener()
+    with open("chatlog.txt", "a") as f:
+        minescript.echo("Chat logging started. All chat messages will be logged to chatlog.txt")
+        while True:
+            event = events.get()
+            if event.type == minescript.EventType.CHAT:
+                f.write(event.message + "\n")  
