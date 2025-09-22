@@ -5,10 +5,10 @@ import time
 i = 0
 
 # sends a message to the text file so invetory_crafter.py knows what to do
-with open("/home/nareius/Documents/curseforge/minecraft/Instances/test/batteries.txt", "a") as f:
+with open("path/batteries.txt", "a") as f:
     f.write("W8"+ "\n")  
 
-file_path = "/home/nareius/Documents/curseforge/minecraft/Instances/test/batteries.txt"
+file_path = "path/batteries.txt"
 
 while True:
 
