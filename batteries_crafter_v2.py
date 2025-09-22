@@ -61,7 +61,7 @@ def insert_items_chest():
     keyboard.release(Key.esc)
     time.sleep(1.5) 
 
-file_path = "/home/nareius/Documents/curseforge/minecraft/Instances/test/batteries.txt"
+file_path = "path/batteries.txt"
 
 while True:
     with open(file_path) as f:
